@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2e43e2;  
+  --color-primary: #2e43e2;
   --color-primary-light: #93c5fd;
   --color-secondary: #55ffde;
 }
@@ -21,7 +21,7 @@
   border: 0;
   margin: 0;
   overflow: visible;
-} 
+}
 .hamburger:hover {
   opacity: 0.7;
 }
@@ -31,7 +31,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #55ffde  ;
+  background-color: #55ffde;
 }
 
 .hamburger-box {
@@ -110,16 +110,16 @@
 }
 /* Hamburger set up ende */
 
- body {
-  font-family: "Poppins", sans-serif; 
-   font-size: 18px;
-font-weight: 700;
-line-height: 27px;
- }
-  
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
 @layer components {
   .container {
-    @apply max-w-6xl mx-auto px-28 ;
+    @apply max-w-6xl mx-auto px-5;
   }
 
   .btn {
@@ -219,7 +219,9 @@ line-height: 27px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.35s ease, visibility 0.35s ease;
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease;
 }
 
 #factPopup.is-open {

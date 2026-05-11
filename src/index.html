@@ -324,33 +324,9 @@
       <!-- Hero -->
 
       <section
-        class="container relative flex justify-center items-center w-full"
+        class="container relative flex flex-col justify-center items-center w-full"
       >
         <div>
-          <div class="absolute lg:left-50 bottom-15">
-            <p class="text-white">Click for cuteness overload</p>
-
-            <div class="relative mt-3 max-w-40 max-h-40 mx-auto">
-              <img
-                id="dogPic"
-                src=""
-                alt="Zufälliges Hundefoto"
-                class="w-full max-w-40 max-h-40 rounded-2xl shadow-xl cursor-pointer hover:scale-105 transition"
-                onclick="fetchDogImage()"
-              />
-
-              <div
-                id="dogLoader"
-                class="absolute inset-0 hidden items-center justify-center rounded-2xl bg-black/35"
-                aria-hidden="true"
-              >
-                <div
-                  class="w-8 h-8 border-4 border-white/40 border-t-white rounded-full animate-spin"
-                ></div>
-              </div>
-            </div>
-          </div>
-
           <img
             class="h-24 my-24"
             src="assets/logo.png"
@@ -362,7 +338,7 @@
             onclick="fetchFacts()"
             aria-haspopup="dialog"
             aria-controls="formPopup"
-            class="absolute lg:right-30 bottom-0 hover:scale-110 cursor-pointer"
+            class="lg:absolute lg:right-30 bottom-0 hover:scale-110 cursor-pointer"
           >
             <img
               class="w-16 h-16"
@@ -370,6 +346,30 @@
               alt="Zufälligen Hundefakt anzeigen"
             />
           </button>
+        </div>
+        <!-- Random Dog Pic Button -->
+        <div class="lg:absolute lg:left-20 lg:bottom-15 mt-5 mb-5">
+          <p class="text-white">Click for cuteness overload</p>
+
+          <div class="relative mt-3 max-w-40 max-h-40 mx-auto">
+            <img
+              id="dogPic"
+              src=""
+              alt="Zufälliges Hundefoto"
+              class="w-full max-w-40 max-h-40 rounded-2xl shadow-xl cursor-pointer hover:scale-105 transition"
+              onclick="fetchDogImage()"
+            />
+
+            <div
+              id="dogLoader"
+              class="absolute inset-0 hidden items-center justify-center rounded-2xl bg-black/35"
+              aria-hidden="true"
+            >
+              <div
+                class="w-8 h-8 border-4 border-white/40 border-t-white rounded-full animate-spin"
+              ></div>
+            </div>
+          </div>
         </div>
         <!-- PopUp  -->
       </section>

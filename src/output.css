@@ -36,7 +36,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-md: 28rem;
     --container-lg: 32rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
@@ -284,6 +283,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-20 {
+    left: calc(var(--spacing) * 20);
+  }
   .z-30 {
     z-index: 30;
   }
@@ -343,6 +345,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
@@ -900,6 +905,11 @@
       justify-content: space-between;
     }
   }
+  .lg\:absolute {
+    @media (width >= 64rem) {
+      position: absolute;
+    }
+  }
   .lg\:static {
     @media (width >= 64rem) {
       position: static;
@@ -910,9 +920,14 @@
       right: calc(var(--spacing) * 30);
     }
   }
-  .lg\:left-50 {
+  .lg\:bottom-15 {
     @media (width >= 64rem) {
-      left: calc(var(--spacing) * 50);
+      bottom: calc(var(--spacing) * 15);
+    }
+  }
+  .lg\:left-20 {
+    @media (width >= 64rem) {
+      left: calc(var(--spacing) * 20);
     }
   }
   .lg\:block {
@@ -1087,7 +1102,7 @@ body {
   .container {
     margin-inline: auto;
     max-width: var(--container-6xl);
-    padding-inline: calc(var(--spacing) * 28);
+    padding-inline: calc(var(--spacing) * 5);
   }
   .btn {
     display: inline-block;
